@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Clock.MainPage"
+             xmlns:skia="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms" BackgroundColor="Black">
+
+    <Grid VerticalOptions="Center" Margin="30, 0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100" />
+        </Grid.RowDefinitions>
+
+        <!--<skia:SKCanvasView x:Name="canvasFirstHour" PaintSurface="OnCanvasPaintFirstNumberHours" Grid.Column="0" Grid.Row="0" />
+        <skia:SKCanvasView x:Name="canvasSecondHour" PaintSurface="OnCanvasPaintSecondNumberHours" Grid.Column="1" Grid.Row="0" />
+        
+        <skia:SKCanvasView x:Name="canvasDots1" PaintSurface="OnCanvasPaintDots" Grid.Column="2" Grid.Row="0" />
+        
+        <skia:SKCanvasView x:Name="canvasFirstMinute" PaintSurface="OnCanvasPaintFirstNumberMinutes" Grid.Column="3" Grid.Row="0" />
+        <skia:SKCanvasView x:Name="canvasSecondMinute" PaintSurface="OnCanvasPaintSecondNumberMinutes" Grid.Column="4" Grid.Row="0" />
+        
+        <skia:SKCanvasView x:Name="canvasDots2" PaintSurface="OnCanvasPaintDots" Grid.Column="5" Grid.Row="0" />
+        
+        <skia:SKCanvasView x:Name="canvasFirstSecond" PaintSurface="OnCanvasPaintFirstNumberSeconds" Grid.Column="6" Grid.Row="0" />
+        <skia:SKCanvasView x:Name="canvasSecondSecond" PaintSurface="OnCanvasPaintSecondNumberSeconds" Grid.Column="7" Grid.Row="0" />-->
+
+        <skia:SKCanvasView x:Name="canvasFirstHour" PaintSurface="OnCanvasPaintNumber" Grid.Column="0" Grid.Row="0" />
+        <skia:SKCanvasView x:Name="canvasSecondHour" PaintSurface="OnCanvasPaintNumber" Grid.Column="1" Grid.Row="0" />
+
+        <skia:SKCanvasView x:Name="canvasDots1" PaintSurface="OnCanvasPaintDots" Grid.Column="2" Grid.Row="0" />
+
+        <skia:SKCanvasView x:Name="canvasFirstMinute" PaintSurface="OnCanvasPaintNumber" Grid.Column="3" Grid.Row="0" />
+        <skia:SKCanvasView x:Name="canvasSecondMinute" PaintSurface="OnCanvasPaintNumber" Grid.Column="4" Grid.Row="0" />
+
+        <skia:SKCanvasView x:Name="canvasDots2" PaintSurface="OnCanvasPaintDots" Grid.Column="5" Grid.Row="0" />
+
+        <skia:SKCanvasView x:Name="canvasFirstSecond" PaintSurface="OnCanvasPaintNumber" Grid.Column="6" Grid.Row="0" />
+        <skia:SKCanvasView x:Name="canvasSecondSecond" PaintSurface="OnCanvasPaintNumber" Grid.Column="7" Grid.Row="0" />
+
+    </Grid>
+</ContentPage>
